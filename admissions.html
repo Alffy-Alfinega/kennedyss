@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Kennedy Secondary School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> +256 754 621235</span>
+                <span><i class="fas fa-envelope"></i> info@kennedyss.ac.ug</span>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://via.placeholder.com/60x60?text=KSS" alt="KSS Logo">
+                    <div class="logo-text">
+                        <h1>KENNEDY</h1>
+                        <span>Secondary School</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html" class="active">Admissions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Admissions</h1>
+            <p>Join a community of learners and leaders. Apply today for the next intake.</p>
+        </div>
+    </section>
+
+    <!-- Admission Content -->
+    <section class="admission-content container reveal" style="padding: 80px 0;">
+        <div class="admission-grid">
+            <div class="admission-info">
+                <h2>Application Process</h2>
+                <p>We've streamlined our admission process to make it as smooth as possible for both students and parents. Follow these simple steps to join the KSS family.</p>
+                
+                <div class="admission-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-info">
+                            <h4>Initial Inquiry</h4>
+                            <p>Visit the school campus in Kawuku or fill out the online inquiry form on this page to express interest.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-info">
+                            <h4>Form Collection & Submission</h4>
+                            <p>Pick up an admission form from the school office (UGX 50,000) and submit it with all required documents.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-info">
+                            <h4>Interviews & Placement</h4>
+                            <p>Prospective students will undergo a brief interview and placement assessment to determine their academic needs.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-info">
+                            <h4>Admission Letter</h4>
+                            <p>Successful applicants will receive an official admission letter along with the full school requirements list.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <i class="fas fa-file-pdf" style="font-size: 2rem; color: #e74c3c; margin-bottom: 15px; display: block;"></i>
+                    <h4>Information Guide 2026</h4>
+                    <p>Download our complete brochure for detailed information on fees, requirements, and school policies.</p>
+                    <a href="#" class="btn btn-secondary" style="margin-top: 15px; border-color: var(--primary-color); color: var(--primary-color);">Download PDF (Coming Soon)</a>
+                </div>
+            </div>
+
+            <div class="admission-form">
+                <form class="contact-form">
+                    <h3>Admission Inquiry</h3>
+                    <div class="form-group">
+                        <label for="name">Student's Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="parent">Parent/Guardian Name</label>
+                        <input type="text" id="parent" name="parent" required placeholder="Enter parent name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Applying for Class</label>
+                        <select id="class" name="class" required>
+                            <option value="">Select Class</option>
+                            <option value="S1">Senior One (S.1)</option>
+                            <option value="S2">Senior Two (S.2)</option>
+                            <option value="S3">Senior Three (S.3)</option>
+                            <option value="S4">Senior Four (S.4)</option>
+                            <option value="S5">Senior Five (S.5)</option>
+                            <option value="S6">Senior Six (S.6)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any specific questions?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>KENNEDY SS</h3>
+                <p>Located 22km along Kampala-Entebbe Road, we are a leading private school dedicated to academic and moral excellence.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">School Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kawuku, Entebbe Road, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 754 621235</p>
+                <p><i class="fas fa-envelope"></i> info@kennedyss.ac.ug</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kennedy Secondary School. All Rights Reserved. | "Education is Our Priority"</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

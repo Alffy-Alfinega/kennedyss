@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Gallery | Kennedy Secondary School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> +256 754 621235</span>
+                <span><i class="fas fa-envelope"></i> info@kennedyss.ac.ug</span>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://via.placeholder.com/60x60?text=KSS" alt="KSS Logo">
+                    <div class="logo-text">
+                        <h1>KENNEDY</h1>
+                        <span>Secondary School</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>School Gallery</h1>
+            <p>Capturing the vibrant life, spirit, and excellence of KSS.</p>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="gallery-content container reveal" style="padding: 80px 0;">
+        <div class="section-title">
+            <h2>The KSS Experience</h2>
+            <p>From the world-class "Stream of Life Choir" to our academic labs and sports fields.</p>
+        </div>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="academics">Academics</button>
+            <button class="filter-btn" data-filter="choir">Choir & Arts</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="campus">Campus Life</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="choir">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Stream of Life Choir">
+                <div class="gallery-overlay">
+                    <span>Stream of Life Choir</span>
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="academics">
+                <img src="https://images.unsplash.com/photo-1564910443496-5fd2d76b47fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Science Laboratory">
+                <div class="gallery-overlay">
+                    <span>Modern Science Lab</span>
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="campus">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Main Hall Study">
+                <div class="gallery-overlay">
+                    <span>Kenhill Study Hall</span>
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="sports">
+                <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="School Sports">
+                <div class="gallery-overlay">
+                    <span>Athletics & Games</span>
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="campus">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Graduation Day">
+                <div class="gallery-overlay">
+                    <span>Class of 2025</span>
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="academics">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="ICT Lab">
+                <div class="gallery-overlay">
+                    <span>Computer Excellence</span>
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox container -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+
+
+        <div class="section-title" style="margin-top: 50px;">
+            <h3>Featured Performance</h3>
+            <p>Experience the "Stream of Life" Choir.</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe width="560" height="315" src="https://www.youtube.com/embed/-_ue8IiSrVU?si=U9-7DAyVuzEgfkmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>KENNEDY SS</h3>
+                <p>Located 22km along Kampala-Entebbe Road, we are a leading private school dedicated to academic and moral excellence.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">School Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kawuku, Entebbe Road, Uganda</p>
+                <p><i class="fas fa-phone"></i> +256 754 621235</p>
+                <p><i class="fas fa-envelope"></i> info@kennedyss.ac.ug</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kennedy Secondary School. All Rights Reserved. | "Education is Our Priority"</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
