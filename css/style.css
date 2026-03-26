@@ -362,29 +362,82 @@ footer {
         transition: transform 0.5s ease-in;
         z-index: 1000;
         padding-top: 50px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     }
 
     .nav-links li {
-        opacity: 0;
         margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
     }
 
     .burger {
         display: block;
+        z-index: 1001;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .stats {
         flex-direction: column;
         gap: 30px;
+        margin-top: 20px;
     }
-}
 
-.nav-active {
-    transform: translateX(0%);
+    .about-grid, .curriculum-grid, .admission-grid, .vm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .top-info span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+    }
+
+    .footer-grid {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        display: flex;
+    }
 }
 
 @keyframes navLinkFade {
